@@ -24,5 +24,20 @@ if __name__ == "__main__":
     )
 
     df = df.drop(["Share"], axis=1)
+    print("=" * 16)
     print(df)
+
+    print("=" * 16)
+    print(df.columns)
+
+    print("=" * 16)
+    print(df["Download"])
+
+    print("=" * 16)
+    print(df.head(4))
+
+    print("=" * 16)
+    print(df.tail(4))
+
+    print("=" * 16)
     print(df.describe())
