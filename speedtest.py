@@ -20,11 +20,10 @@ def list_versions():
 if __name__ == "__main__":
     list_versions()
 
-    df = pd.read_csv("speedtest/speedtest.csv", parse_dates=["Timestamp"])
-    df = df.drop(["Share"], axis=1)
-    sample_time = df["Timestamp"]
-    download_speed = df["Download"]
-    upload_speed = df["Upload"]
+    df = pd.read_csv("speedtest/speedtest2.csv", parse_dates=["time stamp"])
+    sample_time = df["time stamp"]
+    download_speed = df["download"]
+    upload_speed = df["upload"]
 
     plt.figure(figsize=(16, 9))
     plt.title("Internet Speed")
