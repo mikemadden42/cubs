@@ -2,6 +2,6 @@
 
 DATE=$(date)
 #SPEED=$(speedtest -f csv --output-header)
-SPEED=$(speedtest -f csv)
+SPEED=$($HOME/bin/speedtest -f csv)
 
 echo "\"${DATE}\",${SPEED}"
