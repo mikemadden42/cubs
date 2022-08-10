@@ -13,8 +13,8 @@ def list_versions():
     """
     List library versions.
     """
-    print("pandas: {}".format(pd.__version__))
-    print("requests: {}".format(requests.__version__))
+    print(f"pandas: {pd.__version__}")
+    print(f"requests: {requests.__version__}")
 
 
 if __name__ == "__main__":
